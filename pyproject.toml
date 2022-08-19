@@ -7,3 +7,9 @@ name = "fxp"
 description = "fluent fixed-point"
 requires-python = ">=3.9"
 dynamic = ["version"]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
